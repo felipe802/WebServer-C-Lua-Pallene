@@ -1,7 +1,6 @@
-# Variables - easier to change later
 CC = clang
 CFLAGS = -I/usr/include/lua5.4
-LDFLAGS = -llua5.4
+LDFLAGS = -llua5.4 - lcurl
 TARGET = main
 
 .PHONY: all clean
