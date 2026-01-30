@@ -1,4 +1,5 @@
-local met = {} 
+local met = {} -- Every Pallene file MUST start by declaring a module table
+
 -- Performance-critical math for the Barsi method
 -- Follow this link to install Pallene: https://github.com/pallene-lang/pallene
 
