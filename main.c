@@ -16,7 +16,7 @@ int main() {
 
     // Prepare to call the 'calculate_yield' function
     lua_getglobal(L, "calculate_yield");
-    lua_pushnumber(L, 35.50); // Fake price fow a while
+    lua_pushnumber(L, 35.50); // Fake price for a while
     lua_pushnumber(L, 2.2); // Fake dividend for now
     
     // Call function: 2 args, 1 result

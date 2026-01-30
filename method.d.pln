@@ -1,0 +1,2 @@
+calculate_yield: (float, float) -> float
+max_price_ceiling: (float, float) -> float

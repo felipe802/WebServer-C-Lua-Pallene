@@ -1,0 +1,3 @@
+[submodule "pallene"]
+	path = pallene
+	url = https://github.com/pallene-lang/pallene
