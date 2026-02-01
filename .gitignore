@@ -1,0 +1,7 @@
+# All of them will not be visible on GitHub
+main
+*.so
+*.o
+method.c
+method.d.pln
+build/
