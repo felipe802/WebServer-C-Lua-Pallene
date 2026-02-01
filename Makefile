@@ -1,4 +1,6 @@
 # From now, we have to use the way we downloaded before, lua-internals
+
+# Run everything with "make" and "make clean"
 CC = clang
 CFLAGS = -I/usr/local/include -Wall # Using core's API
 LDFLAGS = -L/usr/local/lib -llua -lm -Wl,-E # Linker search for liblua.a
