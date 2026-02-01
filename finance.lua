@@ -1,8 +1,9 @@
--- The back (C) fetches the data very fast, and the front/logic (Lua) decides how to
--- display or process it.
-function calculate_yield(price, dividend)
-    local yield = (dividend / price) * 100
-    return yield
-end
+-- Now, using Pallene, it become a high-performance module
+local method = require("method") -- Loads the method.so compiled from Pallene
 
-print("Lua: Calculating stats for BBAS3...")
+function calc_indicators(price, div) -- Must be global
+    if price == 0.0 then return 0.0, 0.0 end
+    local yield = method.calculate_yield(price, div)
+    local ceiling = method.max_price_ceiling(div, 6.0)
+    return yield, ceiling
+end
