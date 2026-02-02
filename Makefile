@@ -24,4 +24,4 @@ clean:
 	rm -f $(TARGET) method.so method.c 
 	clear
 
-# Run using LD_LIBRARY_PATH=/usr/local/lib ./main
+# Run using LUA_CPATH="./?.so;;" LD_LIBRARY_PATH=/usr/local/lib ./main

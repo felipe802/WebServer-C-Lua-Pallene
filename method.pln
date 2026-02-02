@@ -1,0 +1,18 @@
+local met = {} -- Every Pallene file MUST start by declaring a module table
+-- Pallene is also better for fast demand, like HTTP Parser
+
+-- Performance-critical math for the Barsi method
+-- Follow this link to install Pallene: https://github.com/pallene-lang/pallene
+
+function met.calculate_yield(price: float, dividend: float): float
+    if price <= 0.0 then return 0.0 end
+    return (dividend / price) * 100.0
+end
+
+function met.max_price_ceiling(dividend: float, min_yield: float): float
+    return dividend / (min_yield / 100.0)
+end
+
+-- Must return that table in the end
+return met
+
